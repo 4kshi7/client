@@ -1,13 +1,149 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: "Poppins", "Helvetica";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body{
+  height: 100%;
+  width: 100%;
 }
+
+.App{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh 5vw;
+}
+
+#heading{
+  display: flex;
+  justify-content: center;
+}
+
+#form-output{
+  /* background: whitesmoke; */
+  width: 60%;
+}
+
+#data-card{
+  margin: 10px;
+  padding: 0 5px;
+  background: rgb(245, 254, 255);
+  width: 80%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+
+#data-card h3{
+  font-weight: 400;
+}
+
+#data-card h3 span{
+  font-weight: 600;
+}
+
+#data-card #data-btn{
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#data-card #data-btn button{
+  width: 100px;
+  height: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#data-card #data-btn button:hover{
+  width: 100px;
+  height: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: 0.3s ease-in-out;
+}
+
+
+#form-container{
+  background: wheat;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+
+#data-Delete{
+  margin-top: 50px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  background: wheat;
+  border: 2px solid #000;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#data-Delete label{
+  font-weight: 600;
+  font-size: large;
+}
+
+#data-Delete button{
+  width: 100px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+
+form{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  
+}
+
+label h1, h3{
+  font-weight: 600;
+}
+
+input{
+  width: 270px;
+  height: 25px;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  font-weight: 400;
+  margin: 0 5px;
+}
+
+button{
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  font-size: larger;
+  border: 2px solid royalblue;
+}
+
